@@ -2,12 +2,15 @@
 
 ### Date created
 Include the date you created this project and README file.
+22/9/2021
 
 ### Project Title
 Replace the Project Title
+githup project
 
 ### Description
 Describe what your project is about and what it does
+intiate githup repository
 
 ### Files used
 Include the files used
