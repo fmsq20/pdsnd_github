@@ -12,12 +12,12 @@ def get_filters():
     city = input('which city would you like to see data chicago,washington or new_york_city?').lower()
     while city not in (CITY_DATA .keys()):
         print('which city would you like to see data chicago,washington or new_york_city?')
-        city= input('choose city name?').lower()
+        city= input('Enter city name?').lower()
 
-    filter= input( 'Do you want to filter data by month,day,or all?').lower()
+    filter= input('Would you like to filter data by month,day,or all?').lower()
     while filter not in (['month','day','all']):
         print('incorrect filter')
-        filter= input('Do you want to filter data by month,day,or all?').lower()
+        filter= input('Would you like to filter data by month,day,or all?').lower()
 
     months =['january','february','march','april','may','june']
     if filter == 'month' or filter == 'all' :
@@ -113,7 +113,7 @@ def user_stats(df,city):
         gender = df['Gender'].value_counts()
         print(gender)
     else:
-        print("Not applicable on this city.")
+        print("NOT APPLICABLE ON THIS CITY.")
 
     if 'Birth Year'in df.columns.values.tolist():
         earliest = df['Birth Year'].min()
@@ -123,7 +123,7 @@ def user_stats(df,city):
         common_birth = df['Birth Year'].mode()[0]
         print(common_birth)
     else:
-        print("Not applicable on this city.")
+        print("NOT APPLICABLE ON THIS CITY.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
